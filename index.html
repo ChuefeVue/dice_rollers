@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Welcome to the jungle :) -->
+    <!--
+Number of Sides on Dice Text input box -- Defaults to 6 sides if blank
+Number of Dice Rolls Text input box -->
+    <!-- <div>
+        <label for="sdices">Enter a number of sides: </label>
+        <input type="number" name="sdices" id="facedices">
+    </div> -->
+    <div>
+        <label for="tdices">Enter a number of dice: </label>
+        <input type="number" name="tdices" id="totaldices">
+    </div>
+    <!--
+Roll button -- does not activate if dice rolls text input box is empty
+Reset Rolls button -- will remove all data from dieRolls Array regardless if there is data or not -->
+    <div>
+        <button id="roll_button">
+            Roll!
+        </button>
+        <!-- <button id="reset_button">
+            Reset!
+        </button> -->
+    </div>
+
+    <!--
+Total output line -- adds all activated rolls together into a sum of all rolls - using the list might help calculate - otherwise it defaults to 0 -->
+    <div>
+        Total: <span id="all_sum">0</span>
+    </div>
+    <!--
+Show all rolls button -- when clicked it will reveal all numbers that were rolled, if no rolls exist it does nothing.
+    -> Close list button that replaces Show all rolls button -- when pressed it will close the list that appears when the Show all rolls button was pressed -> upon which will replace the close list button with Show all rolls button.-->
+
+    <div>
+        <button id="all_rolls">
+            Show All Rolls
+        </button>
+    </div>
+
+    <!--
+List that reveals and hide itself after the Show all rolls button is push once and when Close list button is push - Ordered List
+-->
+    <div>
+        <ol id="rolls_display">
+        </ol>
+    </div>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
